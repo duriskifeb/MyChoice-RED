@@ -1,0 +1,15 @@
+Tipe data primitif :
+
+1. Char : Grade nilai
+2. Int : nilai itegeral
+3. Float/Double : nilai ujian
+4.Boolean : absensi kelas
+
+variabel A = 100
+variabel B = 99
+
+Print A 
+Print B 
+
+
+
