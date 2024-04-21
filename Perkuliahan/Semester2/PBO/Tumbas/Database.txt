@@ -1,0 +1,10 @@
+febriyanto, Algo, 26.0, 0, 78, 0
+Ardiansyah, Algo, 23.333333333333332, 0, 70, 0
+riskiANjir, Data, 0.0, 0, 0, 0
+kiki, UIUX, 25.0, 100, 0, 0, 0
+riri, UIUX, 5.0, 20, 0, 0, 0
+riri, Lomba, 0.0, 0, 0, 0, 0
+ERD, Data, 30.0, 0, 0, 90
+pou, Lomba, 0.0, 0, 0, 0, 0
+poko, Lomba, 0.0, 0, 0, 0, 0
+polo, Lomba, 0.0, 0, 0, 0, 0
