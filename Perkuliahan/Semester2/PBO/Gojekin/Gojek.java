@@ -40,7 +40,8 @@ class Member {
 
     @Override
     public String toString() {
-        return " Member id = " + id +"\n"+ " nama = " + nama + "\n"+ " saldo = " + saldo + "\n" + " telepon = " + telepon +"\n" ;
+        return " Member id = " + id + "\n" + " nama = " + nama + "\n" + " saldo = " + saldo + "\n" + " telepon = "
+                + telepon + "\n";
     }
 }
 
@@ -64,7 +65,8 @@ class Driver extends Member {
 
     @Override
     public String toString() {
-        return super.toString() + "\n Driver : "+"\n" + " Plat nomer = "+ platNo + "\n"+" jenisKendaraan = " + jenisKendaraan ;
+        return super.toString() + "\n Driver : " + "\n" + " Plat nomer = " + platNo + "\n" + " jenisKendaraan = "
+                + jenisKendaraan;
     }
 }
 
@@ -74,7 +76,7 @@ class Customer extends Member {
     }
 }
 
-///mulai  program utama///
+/// mulai program utama///
 
 public class Gojek {
     private List<Member> members = new ArrayList<>();
@@ -83,14 +85,14 @@ public class Gojek {
         System.out.println();
         Driver driver = new Driver(id, nama, telepon, platNo, jenisKendaraan, saldo);
         members.add(driver);
-        System.out.println(" Driver telah di tambahkan. \n" + driver+ "\n");
+        System.out.println(" Driver telah di tambahkan. \n" + driver + "\n");
     }
 
     public void addCustomer(String id, String nama, String telepon, double saldo) {
         System.out.println();
         Member customer = new Member(id, nama, telepon, saldo);
         members.add(customer);
-        System.out.println(" Customer telah di tambahkan."+"\n" + customer +"\n");
+        System.out.println(" Customer telah di tambahkan." + "\n" + customer + "\n");
     }
 
     public void topUpSaldo(String id, double amount) {
@@ -139,6 +141,7 @@ public class Gojek {
         return null;
     }
 
+    // transaksi
     public void transaksi(String driverId, String customerId, double amount) {
         System.out.println();
         Driver driver = (Driver) findMemberById(driverId);
@@ -160,25 +163,26 @@ public class Gojek {
     }
 
     public void showTopMembers(String type, int limit, boolean reverseOrder) {
-    System.out.println();
-    // Gunakan Comparator untuk mengurutkan berdasarkan saldo
-    members.sort(Comparator.comparingDouble(Member::getSaldo));
-    // Jika reverseOrder true, balik urutan
-    if (reverseOrder) {
-        Collections.reverse(members);
-    }
-    int count = 0;
-    for (Member member : members) {
-        if (count >= limit) {
-            break;
+        System.out.println();
+        // Gunakan Comparator untuk mengurutkan berdasarkan saldo
+        members.sort(Comparator.comparingDouble(Member::getSaldo));
+        // Jika reverseOrder true, balik urutan
+        if (reverseOrder) {
+            Collections.reverse(members);
         }
-        // Filter tipe member sesuai dengan parameter type
-        if ((type.equals("Driver") && member instanceof Driver) ||
-                (type.equals("Customer") && !(member instanceof Driver))) {
-            System.out.println(member);
-            count++;
+
+        int count = 0;
+        for (Member member : members) {
+            if (count >= limit) {
+                break;
+            }
+            // Filter tipe member sesuai dengan parameter type
+            if ((type.equals("Driver") && member instanceof Driver) ||
+                    (type.equals("Customer") && !(member instanceof Driver))) {
+                System.out.println(member);
+                count++;
+            }
         }
     }
 }
 
-}
