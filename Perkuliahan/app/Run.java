@@ -1,4 +1,4 @@
-package Perkuliahan.app;
+package App;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -369,14 +369,14 @@ public class Run {
                             int kembalian = jumlahBayar - totalHarga;
                             tiketPilihan.kurangiJumlah(jumlahBeli);
 
-                            System.out.println("Kembalian: Rp " + kembalian);
+                            System.out.println("\nKembalian: Rp " + kembalian);
                             System.out.print("Nomor Seri Tiket: ");
                             for (int i = 0; i < jumlahBeli; i++) {
                                 tiketPilihan.setNomorSeri(i);
-                                System.out.print((tiketPilihan.getNomorSeri(i)) + ", ");
+                                System.out.print((tiketPilihan.getNomorSeri(i)) + ", " + "\n");
                             }
                             System.out.println("\n[ Transaksi Berhasil ]\n");
-                            System.out.println("Terimakasih atas kunjungannya.");
+                            System.out.println("[Terimakasih atas kunjungannya.]\n");
                             Tiket tiket = new Tiket(tiketPilihan.getJenis(), tiketPilihan.getNamaKonser(), totalHarga,
                                     jumlahBeli);
                             sudahTiket.add(tiket);
@@ -458,13 +458,13 @@ public class Run {
             System.out.print("\nPilihan anda :");
             pilihanUser = input.nextLine();
             System.out.println();
+            CloseAPK(); // agar membersihkan layar sebelumnya
 
             switch (pilihanUser) {
                 case "1":
                     System.out.println("1. Lihat jadwal event Konser\n");
                     try {
                         tampilkanData();
-
                     } catch (Exception e) {
                         System.err.println("Maaf terjadi kesalahan..!!" + e.getMessage());
                     }
@@ -655,8 +655,9 @@ public class Run {
             data = bufferInput.readLine();
         }
 
-        System.out.println(
-                "-------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------");
+        
+
     }
 
     public static void tampilkanIsiFile(String filePath) throws IOException { // untuk menampilkan isi dari file txt.

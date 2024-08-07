@@ -1,4 +1,4 @@
-package Perkuliahan.app;
+package App;
 
 
 import java.io.IOException;
