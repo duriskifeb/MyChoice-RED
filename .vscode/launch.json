@@ -3,6 +3,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Cari",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.Cari",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "InsertLIstUrut",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.InsertLIstUrut",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "InsertUrut",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.InsertUrut",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SingleLinkedList1",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.SingleLinkedList1",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SingleLinkedList2",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.SingleLinkedList2",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Latihan1",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.Latihan1",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Latihan2",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.Latihan2",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SingleLinkedList",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.SingleLinkedList",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "java",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan3.java",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "TesProgrammer",
       "request": "launch",
       "mainClass": "Perkuliahan.NewEra.TesProgrammer",
