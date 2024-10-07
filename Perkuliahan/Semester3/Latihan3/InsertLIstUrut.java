@@ -1,12 +1,12 @@
 package Perkuliahan.Semester3.Latihan3;
 
 // Kelas Node untuk membentuk struktur dari Linked List
-class Node2 {
+class Nodes {
     int data;
     Node next;
 
     // Konstruktor untuk Node
-    Node2(int d) {
+    Nodes(int d) {
         data = d;
         next = null;
     }

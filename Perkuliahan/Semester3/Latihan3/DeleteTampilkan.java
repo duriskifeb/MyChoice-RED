@@ -36,7 +36,7 @@ public class DeleteTampilkan {
         }
         System.out.println();
     }
-
+    
     // Metode untuk menghapus node
     public int delete(int data) {
         // Jika list kosong
@@ -48,7 +48,7 @@ public class DeleteTampilkan {
         // Jika data ada di head
         if (head.data == data) {
             head = head.next;
-            System.out.println("Node " + data + " telah dihapus");
+            System.out.println("Node " + data + " telah dihapus\n");
             return 0;
         }
 
@@ -60,7 +60,7 @@ public class DeleteTampilkan {
             if (current.data == data) {
                 prec.next = current.next;
                 current.next = null;
-                System.out.println("Node " + data + " telah dihapus");
+                System.out.println("Node " + data + " telah dihapus\n");
                 return 0;
             }
             prec = current;

@@ -35,7 +35,7 @@ public class Cari {
         System.out.println("Node baru " + data + " ditambahkan secara terurut");
     }
 
-    // Metode untuk menghapus node
+    // fungsi deleting
     public int delete(int data) {
         // Jika list kosong
         if (head == null) {
@@ -70,15 +70,16 @@ public class Cari {
         return 0;
     }
 
-    // Metode untuk mencari data di dalam list
+    // fungsi searching
     public void searchData(int data) {
         Node current = head;
-        int posisi = 1; // Urutan posisi dimulai dari 1
+        int posisi = 1; // Urutan posisi dimulai dari 1 ya
 
-        // Lakukan pencarian di dalam list
+        // Lakukan pencarian datanya di dalam list
         while (current != null) {
             if (current.data == data) {
                 System.out.println("Data " + data + " ditemukan pada urutan ke-" + posisi);
+                System.out.println();
                 return;
             }
             current = current.next;
@@ -86,10 +87,10 @@ public class Cari {
         }
 
         // Jika data tidak ditemukan
-        System.out.println("Data " + data + " tidak ditemukan");
+        System.out.println("Data " + data + " tidak ditemukan\n");
     }
 
-    // Metode untuk mencetak list berdasarkan urutan di dalam linked list
+    //fungsi print ya teman
     public void printList() {
         Node current = head;
         System.out.print("Single LinkedList : ");
@@ -100,7 +101,6 @@ public class Cari {
         System.out.println();
     }
 
-    // Metode utama untuk menjalankan program
     public static void main(String[] args) {
         Cari sll = new Cari();
         sll.runThis();
@@ -108,18 +108,19 @@ public class Cari {
 
     // Metode untuk menjalankan contoh pengisian data
     void runThis() {
-        // Menggunakan insertSorted untuk memasukkan data secara urut
         insertSorted(11);
         insertSorted(9);
         insertSorted(5);
         insertSorted(12);
         insertSorted(22);
         delete(22);
+        delete(5);
         System.out.println();
         printList();
 
         // Contoh pencarian data
-        searchData(11); // Akan memberikan output bahwa data ditemukan
-        searchData(90); // Akan memberikan output bahwa data tidak ditemukan
+        searchData(11); 
+        searchData(90); 
+        searchData(95); 
     }
 }
