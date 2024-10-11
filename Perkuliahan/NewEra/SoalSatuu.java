@@ -2,7 +2,7 @@ package Perkuliahan.NewEra;
 
 import java.util.Scanner;
 
-class KelolaArrayInteger {
+class KelolaArrayInteger1 {
     int n = 10;
     int[] arrOfInt = new int[n];
     Scanner inp = new Scanner(System.in);
