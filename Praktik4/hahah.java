@@ -17,6 +17,18 @@ public class hahah {
             return id;
         }
 
+        public String getNama() {
+            return nama;
+        }
+
+        public int getStok() {
+            return stok;
+        }
+
+        public void setStok(int stok) {
+            this.stok = stok;
+        }
+
         public String info() {
             return id + " " + nama + " " + stok;
         }
@@ -106,6 +118,40 @@ public class hahah {
         System.out.println("Node " + id + " tidak ditemukan");
     }
 
+    // Method to search item by name and stock
+    public void searchByNameAndStock(String nama, int stok) {
+        Node current = head;
+        boolean found = false;
+
+        while (current != null) {
+            if (current.data.getNama().equalsIgnoreCase(nama) && current.data.getStok() == stok) {
+                System.out.println("Data ditemukan: " + current.data.info());
+                found = true;
+            }
+            current = current.next;
+        }
+
+        if (!found) {
+            System.out.println("Data dengan nama '" + nama + "' dan stok '" + stok + "' tidak ditemukan.");
+        }
+    }
+
+    // Method to update stock (increase or decrease)
+    public void updateStock(int id, int newStock) {
+        Node current = head;
+
+        while (current != null) {
+            if (current.data.getId() == id) {
+                current.data.setStok(newStock);
+                System.out.println("Jumlah stok untuk barang ID " + id + " telah diperbarui menjadi: " + newStock);
+                return;
+            }
+            current = current.next;
+        }
+
+        System.out.println("Barang dengan ID " + id + " tidak ditemukan.");
+    }
+
     // Method to print the list
     public void printList() {
         Node current = head;
@@ -128,31 +174,48 @@ public class hahah {
         System.out.println("================================================");
 
         // Insert items not sorted
-        insert(new Barang(5, "So So", 55));
-        insert(new Barang(2, "Clean", 22));
-        insert(new Barang(1, "So", 11));
+        insert(new Barang(5, "Wahid", 55));
+        insert(new Barang(2, "Itsnani", 22));
+        insert(new Barang(1, "tsalist", 11));
 
         System.out.println("================================================");
 
         // Insert items sorted
-        insertSorted(new Barang(8, "So So Clean", 88));
-        insertSorted(new Barang(3, "So Clean", 33));
-        insertSorted(new Barang(6, "Clean Clean", 66));
-        insertSorted(new Barang(7, "So Clean So Clean", 77));
-        insertSorted(new Barang(10, "Clean So So", 100));
-        insertSorted(new Barang(9, "So Clean Clean", 99));
-        insertSorted(new Barang(4, "Clean So", 44));
+        insertSorted(new Barang(8, "one", 88));
+        insertSorted(new Barang(3, "two", 33));
+        insertSorted(new Barang(6, "three", 66));
+        insertSorted(new Barang(7, "four", 77));
+        insertSorted(new Barang(10, "five", 100));
+        insertSorted(new Barang(9, "six", 99));
+        insertSorted(new Barang(4, "seven", 44));
 
+        System.out.println("================================================");
+        printList();
+        System.out.println();
+
+        // Searching by name and stock
+        System.out.println("Pencarian Data : ");
+        searchByNameAndStock("Clean", 22);
+        searchByNameAndStock("So", 11);
+        searchByNameAndStock("NotFound", 0);
+        
+        System.out.println("================================================\n");
+        
+        // Updating stock
+        System.out.println("Update Data : ");
+        updateStock(5, 60); 
+        updateStock(10, 120); 
         System.out.println("================================================");
         printList();
 
         // Deleting elements
+        System.out.println("\nPenghapusan Data");
         delete(4);
         delete(1);
         delete(10);
         delete(99);
 
-        printList();
         System.out.println("================================================");
+        printList();
     }
 }
