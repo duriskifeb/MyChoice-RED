@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "hahah",
+      "request": "launch",
+      "mainClass": "Praktik4.hahah",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "InsertLIstUrut",
       "request": "launch",
       "mainClass": "Praktik4.InsertLIstUrut",
