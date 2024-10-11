@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "InsertLIstUrut",
+      "request": "launch",
+      "mainClass": "Praktik4.InsertLIstUrut",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "InsertLIstUrut",
+      "request": "launch",
+      "mainClass": "Semester3.Latihan3.InsertLIstUrut",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "KelolaArrayInteger1",
+      "request": "launch",
+      "mainClass": "Perkuliahan.NewEra.KelolaArrayInteger1",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SoalSatu",
+      "request": "launch",
+      "mainClass": "Perkuliahan.Semester3.Latihan4.SoalSatu",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "DeleteTampilkan",
       "request": "launch",
       "mainClass": "Perkuliahan.Semester3.Latihan3.DeleteTampilkan",

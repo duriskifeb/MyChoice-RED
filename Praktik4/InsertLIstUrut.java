@@ -1,13 +1,33 @@
-package Semester3.Latihan3;
+package Praktik4;
 
 // Kelas Node untuk membentuk struktur dari Linked List
-class Nodes {
-    int data;
+
+class Barang {
+    private int id;
+    private String nama;
+    private int stok;
+
+    public Barang(int id, String nama, int stok) {
+        this.id = id;
+        this.nama = nama;
+        this.stok = stok;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String info() {
+        return id + " " + nama + " " + stok;
+    }
+}
+
+class Node {
+    Barang data;
     Node next;
 
-    // Konstruktor untuk Node
-    Nodes(int d) {
-        data = d;
+    Node(Barang b) {
+        data = b;
         next = null;
     }
 }
@@ -17,7 +37,7 @@ public class InsertLIstUrut {
 
     // Metode untuk menyisipkan node secara terurut (dari kecil ke besar)
     public void insertSorted(int data) {
-        Node nn = new Node(data); // Membuat node baru
+        Node nn = new Node(Barang); // Membuat node baru
         Node current = head;
 
         // Jika list kosong atau data lebih kecil dari head
@@ -76,7 +96,7 @@ public class InsertLIstUrut {
         System.out.print("Single LinkedList : ");
         while (current != null) {
             System.out.print(current.data + " ");
-            current = current.next; 
+            current = current.next;
         }
         System.out.println();
     }
@@ -90,12 +110,37 @@ public class InsertLIstUrut {
     // Metode untuk menjalankan contoh pengisian data
     void runThis() {
         // Menggunakan insertSorted untuk memasukkan data secara urut
-        insertSorted(11); // Urutan penyisipan 5
-        insertSorted(9);  // Urutan penyisipan 2
-        insertSorted(5);  // Urutan penyisipan 1
-        insertSorted(12); // Urutan penyisipan 3
-        insertSorted(22); // Urutan penyisipan 4
-        delete(22);       // Hapus elemen 22
-        printList();      // Cetak sesuai urutan linked list (terurut dari kecil ke besar)
+        /*
+         * Buka komentar untuk menjalankan
+         * insert(new Barang(5, "So So", 55));
+         * insert(new Barang(2, "Clean", 22));
+         * insert(new Barang(1, "So", 11));
+         * insert(new Barang(8, "So So Clean", 88));
+         * insert(new Barang(3, "So Clean", 33));
+         * insert(new Barang(6, "Clean Clean", 66));
+         * insert(new Barang(7, "So Clean So Clean", 77));
+         * insert(new Barang(10, "Clean So So", 100));
+         * insert(new Barang(9, "So Clean Clean", 99));
+         * insert(new Barang(4, "Clean So", 44));
+         */
+        /*
+         * Buka komentar untuk menjalankan
+         * insertSorted(new Barang(5, "So So", 17));
+         * insertSorted(new Barang(2, "Clean", 65));
+         * insertSorted(new Barang(1, "So", 15));
+         * insertSorted(new Barang(8, "So So Clean", 32));
+         * insertSorted(new Barang(3, "So Clean", 41));
+         * insertSorted(new Barang(6, "Clean Clean", 100));
+         * insertSorted(new Barang(7, "So Clean So Clean", 100));
+         * insertSorted(new Barang(10, "Clean So So", 30));
+         * insertSorted(new Barang(9, "So Clean Clean", 20));
+         * insertSorted(new Barang(4, "Clean So", 10));
+         */
+        printList();
+        delete(4);
+        delete(1);
+        delete(10);
+        delete(99);
+        printList();
     }
 }

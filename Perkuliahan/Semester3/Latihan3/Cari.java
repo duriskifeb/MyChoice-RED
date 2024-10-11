@@ -112,7 +112,7 @@ public class Cari {
         insertSorted(9);
         insertSorted(5);
         insertSorted(12);
-        insertSorted(22);
+        insertSorted(22);z
         delete(22);
         delete(5);
         System.out.println();
