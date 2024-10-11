@@ -125,14 +125,15 @@ public class hahah {
 
         while (current != null) {
             if (current.data.getNama().equalsIgnoreCase(nama) && current.data.getStok() == stok) {
-                System.out.println("Data ditemukan: " + current.data.info());
+                System.out.println("Data ditemukan : " + current.data.info());
                 found = true;
             }
             current = current.next;
         }
 
         if (!found) {
-            System.out.println("Data dengan nama '" + nama + "' dan stok '" + stok + "' tidak ditemukan.");
+            System.out.println("\nData dengan nama '" + nama + "' dan stok '" + stok + "' tidak ditemukan!");
+            System.out.println("Coba cari lagi kembali");
         }
     }
 
@@ -174,9 +175,9 @@ public class hahah {
         System.out.println("================================================");
 
         // Insert items not sorted
-        insert(new Barang(5, "Wahid", 55));
-        insert(new Barang(2, "Itsnani", 22));
-        insert(new Barang(1, "tsalist", 11));
+        insert(new Barang(5, "Clean", 55));
+        insert(new Barang(2, "Supeno", 11));
+        insert(new Barang(1, "Zaidun Qoim", 21));
 
         System.out.println("================================================");
 
@@ -193,11 +194,21 @@ public class hahah {
         printList();
         System.out.println();
 
+        // Deleting elements
+        System.out.println("Penghapusan Data : ");
+        delete(4);
+        delete(1);
+        delete(10);
+        delete(99);
+
+        printList();
+        System.out.println("================================================");
+
         // Searching by name and stock
-        System.out.println("Pencarian Data : ");
-        searchByNameAndStock("Clean", 22);
-        searchByNameAndStock("So", 11);
-        searchByNameAndStock("NotFound", 0);
+        System.out.println("\nPencarian Data : ");
+        searchByNameAndStock("Clean", 55);
+        searchByNameAndStock("Supeno", 11);
+        searchByNameAndStock("Zaidun Qoim", 21);
         
         System.out.println("================================================\n");
         
@@ -205,16 +216,6 @@ public class hahah {
         System.out.println("Update Data : ");
         updateStock(5, 60); 
         updateStock(10, 120); 
-        System.out.println("================================================");
-        printList();
-
-        // Deleting elements
-        System.out.println("\nPenghapusan Data");
-        delete(4);
-        delete(1);
-        delete(10);
-        delete(99);
-
         System.out.println("================================================");
         printList();
     }
