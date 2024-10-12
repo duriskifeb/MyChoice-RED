@@ -1,6 +1,6 @@
-package Praktik4;
+package NguliaH.Praktik4;
 
-public class hahah {
+public class RitelTugasObjek {
 
     class Barang {
         private int id;
@@ -166,7 +166,7 @@ public class hahah {
 
     // Main method to run the program
     public static void main(String[] args) {
-        hahah sll = new hahah();
+        RitelTugasObjek sll = new RitelTugasObjek();
         sll.runThis();
     }
 

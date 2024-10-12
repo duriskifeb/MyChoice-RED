@@ -1,4 +1,4 @@
-package Praktik4;
+package NguliaH.Praktik4;
 
 class Barang {
     private int id;

@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RitelTugasObjek",
+      "request": "launch",
+      "mainClass": "NguliaH.Praktik4.RitelTugasObjek",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "InsertList",
+      "request": "launch",
+      "mainClass": "NguliaH.Praktik4.InsertList",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Pembuka",
+      "request": "launch",
+      "mainClass": "App.Pembuka",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "hahah",
       "request": "launch",
       "mainClass": "Praktik4.hahah",
