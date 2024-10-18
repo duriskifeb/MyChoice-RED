@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DoubleLinkedList",
+      "request": "launch",
+      "mainClass": "NguliaH.Praktik5.DoubleLinkedList",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "NdisorDewe",
+      "request": "launch",
+      "mainClass": "NguliaH.Praktik5.NdisorDewe",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "RitelTugasObjek",
       "request": "launch",
       "mainClass": "NguliaH.Praktik4.RitelTugasObjek",
