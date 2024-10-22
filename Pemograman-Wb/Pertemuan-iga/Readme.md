@@ -1,0 +1,1 @@
+kenapa js itu di taruh di bawah karena itu merupakan agar html nya di panggil dulu bukan js nya kalau jsnya dulu malah di panggil dom nya nanti
