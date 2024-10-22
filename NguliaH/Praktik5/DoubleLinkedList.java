@@ -2,6 +2,7 @@ package NguliaH.Praktik5;
 
 import java.util.Scanner;
 
+//kelas ini sama dengan objek ya :)
 class Node {
     int data;
     Node next;
@@ -15,8 +16,8 @@ class Node {
 }
 
 public class DoubleLinkedList {
-    Node head; // head of list
-    Node tail; // tail of list
+    Node head; // kepala node
+    Node tail; // 
     Scanner inp = new Scanner(System.in);
 
     /* Insert last */
@@ -30,6 +31,7 @@ public class DoubleLinkedList {
             tail = nn;
         }
         System.out.println("Node baru " + data + " di posisi belakang");
+        System.out.println();
     }
 
     /* Insert First */

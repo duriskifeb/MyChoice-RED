@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>waokwakowaok</h3>
+    <script>
+      let promise = new Promise(function (resolve, reject) {
+        // Eksekutor (kode produksi, "penyanyi")
+        let success = false; // Ubah ini ke false untuk simulasi reject
+
+        setTimeout(() => {
+          if (success) {
+            resolve("Operasi berhasil!"); // Berhasil
+          } else {
+            reject("Operasi gagal!"); // Gagal
+          }
+        }, 2000); // Simulasi delay 2 detik
+      });
+
+      // Menangani hasil Promise
+      promise
+        .then(function (result) {
+          console.log(result); // Jika resolve terpanggil
+        })
+        .catch(function (error) {
+          console.log(error); // Jika reject terpanggil
+        });
+    </script>
+  </body>
+</html>

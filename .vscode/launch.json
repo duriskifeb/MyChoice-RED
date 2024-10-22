@@ -3,6 +3,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "POSUndoStack",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.POSUndoStack",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Stack",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.Stack",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "RitelTugasObjek1",
+      "request": "launch",
+      "mainClass": "NguliaH.Praktik5.RitelTugasObjek1",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Duplicate",
+      "request": "launch",
+      "mainClass": "NguliaH.Praktik5.Duplicate",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "TugasMandiri",
+      "request": "launch",
+      "mainClass": "NguliaH.Praktik5.TugasMandiri",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "DoubleLinkedList",
       "request": "launch",
       "mainClass": "NguliaH.Praktik5.DoubleLinkedList",
