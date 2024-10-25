@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Mandiri",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan6.Mandiri",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "MandiriAI",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan6.MandiriAI",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "LearnNyel",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan6.LearnNyel",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Penyemangat",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.Penyemangat",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "StackList",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan6.StackList",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan6.Main",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "POSUndoStack",
       "request": "launch",
       "mainClass": "NguliaH.StudyLearning.POSUndoStack",
