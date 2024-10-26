@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TugasMandiri",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan6.TugasMandiri",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "StackListen",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan6.StackListen",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "Mandiri",
       "request": "launch",
       "mainClass": "NguliaH.Pertemuan6.Mandiri",
