@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Muhammad",
+    "Age": "23",
+    "isEmployed": true,
+    "hobbies": "Turu"
+  },
+  {
+    "name": "Rizky",
+    "Age": "23",
+    "isEmployed": false,
+    "hobbies": "Turu"
+  },
+  {
+    "name": "Febriyanto",
+    "Age": "23",
+    "isEmployed": true,
+    "hobbies": "Turu"
+  }
+]
