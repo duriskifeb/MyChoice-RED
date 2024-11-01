@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "QueueListPasien",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan7.QueueListPasien",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "JurnalTerbimbing",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan7.JurnalTerbimbing",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "java",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan7.java",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "TugasMandiri",
       "request": "launch",
       "mainClass": "NguliaH.Pertemuan6.TugasMandiri",
