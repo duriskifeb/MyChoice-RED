@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "JavaRun",
+      "request": "launch",
+      "mainClass": "NguliaH.JavaRun",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "JurnalMandiri",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan7.JurnalMandiri",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "JurnalMandiri",
+      "request": "launch",
+      "mainClass": "NguliaH.JurnalMandiri",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "JurnalTerbimbingan",
+      "request": "launch",
+      "mainClass": "NguliaH.JurnalTerbimbingan",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "MisalNih",
+      "request": "launch",
+      "mainClass": "NguliaH.MisalNih",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Rapat",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan7.Rapat",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Rapat",
+      "request": "launch",
+      "mainClass": "NguliaH.Rapat",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "QueueListPasien",
       "request": "launch",
       "mainClass": "NguliaH.Pertemuan7.QueueListPasien",
