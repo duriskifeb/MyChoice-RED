@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "inorderTree",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.inorderTree",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "BinaryTree",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.BinaryTree",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "root",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.root",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "JavaRun",
       "request": "launch",
       "mainClass": "NguliaH.JavaRun",
