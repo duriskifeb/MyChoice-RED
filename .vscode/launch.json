@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Jurbalterbimbing",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.Jurbalterbimbing",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "BinaryTree",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.BinaryTree",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Pohon",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.Pohon",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Tree",
+      "request": "launch",
+      "mainClass": "NguliaH.Tree",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "inorderTree",
       "request": "launch",
       "mainClass": "NguliaH.StudyLearning.inorderTree",
