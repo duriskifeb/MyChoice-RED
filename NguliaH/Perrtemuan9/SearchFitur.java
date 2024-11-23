@@ -2,18 +2,18 @@ package NguliaH.Perrtemuan9;
 
 import java.util.Scanner;
 
-public class JurnalTerbimbing {
+public class SearchFitur {
 
     Node root;
 
     public static void main(String[] args) {
-        JurnalTerbimbing tree = new JurnalTerbimbing();
+        SearchFitur tree = new SearchFitur();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Masukkan jumlah elemen yang ingin ditambahkan: ");
+        System.out.print("Masukkan jumlah elemen yang ingin ditambahkan : ");
         int n = scanner.nextInt();
 
-        System.out.println("Masukkan " + n + " nilai : ");
+        System.out.print("Masukkan " + n + " nilai : ");
         for (int i = 0; i < n; i++) {
             int value = scanner.nextInt();
             tree.insert(value);
@@ -24,11 +24,11 @@ public class JurnalTerbimbing {
         scanner.close();
     }
 
-    public JurnalTerbimbing() {
+    public SearchFitur() {
         root = null;
     }
 
-    //niki insert
+    // niki insert
     public void insert(int data) {
         root = insertRecord(root, data);
     }
@@ -47,7 +47,7 @@ public class JurnalTerbimbing {
         return root;
     }
 
-    //tampilkan data
+    // tampilkan data
     public void dataShow() {
         System.out.print("Inorder : ");
         inorderRec(root);
@@ -84,7 +84,18 @@ public class JurnalTerbimbing {
         System.out.print(node.data + " ");
     }
 
-    //method 
+    // method searching
+    public boolean searchRec(Node root, int data) {
+        if (root == null)
+            return false;
+        if (root.data == data)
+            return true;
+        if (data < root.data)
+            return searchRec(root.left, data);
+        else
+            return searchRec(root.right, data);
+    }
+
     
 
     class Node {

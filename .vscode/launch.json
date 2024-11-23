@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Terbimbing3",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.Terbimbing3",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SearchFitur",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.SearchFitur",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SearchFiturs",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.SearchFiturs",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "Jurbalterbimbing",
       "request": "launch",
       "mainClass": "NguliaH.Perrtemuan9.Jurbalterbimbing",
