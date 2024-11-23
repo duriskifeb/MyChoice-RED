@@ -21,6 +21,17 @@ public class SearchFitur {
 
         tree.dataShow();
 
+        //inputan untuk search nya 
+        System.out.print("\nMasukkan nilai yang ingin dicari : ");
+        int searchValue = scanner.nextInt();
+        boolean dicari = tree.search(searchValue);
+
+        if (dicari) {
+            System.out.println("\nNilai " + searchValue + " ditemukan dalam tree.");
+        } else {
+            System.out.println("Nilai " + searchValue + " tidak ditemukan dalam tree." + "\n");
+        }
+
         scanner.close();
     }
 
@@ -28,7 +39,6 @@ public class SearchFitur {
         root = null;
     }
 
-    // niki insert
     public void insert(int data) {
         root = insertRecord(root, data);
     }
@@ -47,7 +57,6 @@ public class SearchFitur {
         return root;
     }
 
-    // tampilkan data
     public void dataShow() {
         System.out.print("Inorder : ");
         inorderRec(root);
@@ -84,8 +93,11 @@ public class SearchFitur {
         System.out.print(node.data + " ");
     }
 
-    // method searching
-    public boolean searchRec(Node root, int data) {
+    public boolean search(int data) {
+        return searchRec(root, data);
+    }
+
+    private boolean searchRec(Node root, int data) {
         if (root == null)
             return false;
         if (root.data == data)
@@ -95,8 +107,6 @@ public class SearchFitur {
         else
             return searchRec(root.right, data);
     }
-
-    
 
     class Node {
         int data;

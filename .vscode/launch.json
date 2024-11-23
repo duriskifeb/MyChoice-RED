@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "copasTree",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.copasTree",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "tes",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.tes",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "JurnalTerbimbing",
+      "request": "launch",
+      "mainClass": "NguliaH.Perrtemuan9.JurnalTerbimbing",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "Terbimbing3",
       "request": "launch",
       "mainClass": "NguliaH.Perrtemuan9.Terbimbing3",
