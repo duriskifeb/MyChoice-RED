@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LatihanBeforeClassing",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan10.LatihanBeforeClassing",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "hehe",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan10.hehe",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "LatihanBefore",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan10.LatihanBefore",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "copasTree",
       "request": "launch",
       "mainClass": "NguliaH.Perrtemuan9.copasTree",

@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class SearchFitur {
 
-    Node root;
+    Node root;  
 
     public static void main(String[] args) {
         SearchFitur tree = new SearchFitur();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Masukkan jumlah elemen yang ingin ditambahkan : ");
+        System.out.print("Masukkan jumlah elemen yang ingin dit ambahkan : ");
         int n = scanner.nextInt();
 
         System.out.print("Masukkan " + n + " nilai : ");
