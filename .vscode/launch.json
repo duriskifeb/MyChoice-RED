@@ -3,6 +3,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SistemAkademik",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan10.SistemAkademik",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Soal2",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan10.Soal2",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SistemAkademik",
+      "request": "launch",
+      "mainClass": "NguliaH.Maskud.SistemAkademik",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "apalahCak",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan12.apalahCak",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SistemAkademik",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan12.SistemAkademik",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "LengkapiCode",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan12.LengkapiCode",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "LengkapiCode",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan10.LengkapiCode",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "JurnalTerbimbing",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan10.JurnalTerbimbing",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "MultiLinkedList",
+      "request": "launch",
+      "mainClass": "NguliaH.Pertemuan10.MultiLinkedList",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "LatihanBeforeClassing",
       "request": "launch",
       "mainClass": "NguliaH.Pertemuan10.LatihanBeforeClassing",
