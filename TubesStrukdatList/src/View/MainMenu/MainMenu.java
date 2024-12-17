@@ -21,7 +21,7 @@ public class MainMenu {
         while (AppRouter.activeRoute == AppRouter.AppRoute.MAIN_MENU) {
             InputUtilities.cls();
             System.out.println("==============================");
-            System.out.println("         MENU PEGAWAI         ");
+            System.out.println("         MENU RumahKuy         ");
             System.out.println("==============================");
             System.out.println("Selamat Datang : " + authViewModel.loggedUser.getUserID() + " - "
                     + authViewModel.loggedUser.getNama());

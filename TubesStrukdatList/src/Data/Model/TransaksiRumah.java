@@ -4,6 +4,7 @@ import Data.AppEnums.AppEnums;
 import Data.AppEnums.AppRumahEnums;
 import Util.Formatting;
 import Util.Generator;
+import Util.GeneratorRumah;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,28 +17,28 @@ public class TransaksiRumah {
     private AppRumahEnums.Pembayaran pembayaran;
     private AppRumahEnums.StatusTransaksiBayar statusPembayaran;
     private User pegawai;
-    private ArrayList<Customer> customers; // get(0) customers is the one who order
+    private ArrayList<CustomerRumah> customers; // get(0) customers is the one who order
     private double total;
-    private ArrayList<Kamar> kamarOrdered;
+    private ArrayList<Rumah> rumahOrdered;
     private double paid = 0;
 
-    public Transaksi(
+    public TransaksiRumah(
             String noTransaksi,
             Date tanggalTransaksi,
             Date startDate,
             Date endDate,
-            AppEnums.StatusTransaksi statusTransaksi,
-            AppEnums.Pembayaran pembayaran,
+            AppRumahEnums.StatusTransaksi statusTransaksi,
+            AppRumahEnums.Pembayaran pembayaran,
             User pegawai,
-            ArrayList<Customer> customers,
-            ArrayList<Kamar> kamarOrdered) {
+            ArrayList<CustomerRumah> customers,
+            ArrayList<Rumah> rumahOrdered) {
         this.noTransaksi = noTransaksi;
         this.tanggalTransaksi = tanggalTransaksi;
         this.statusTransaksi = statusTransaksi;
         this.pembayaran = pembayaran;
         this.pegawai = pegawai;
         this.customers = customers;
-        this.kamarOrdered = kamarOrdered;
+        this.rumahOrdered = rumahOrdered;
         this.startDate = startDate;
         this.endDate = endDate;
 
@@ -45,23 +46,23 @@ public class TransaksiRumah {
 
     }
 
-    public Transaksi(
+    public TransaksiRumah(
             Date tanggalTransaksi,
             Date startDate,
             Date endDate,
-            AppEnums.StatusTransaksi statusTransaksi,
-            AppEnums.Pembayaran pembayaran,
+            AppRumahEnums.StatusTransaksi statusTransaksi,
+            AppRumahEnums.Pembayaran pembayaran,
             User pegawai,
-            ArrayList<Customer> customers,
-            ArrayList<Kamar> kamarOrdered
+            ArrayList<CustomerRumah> customerRumah,
+            ArrayList<Rumah> rumahOrdered
 
     ) {
         this.startDate = startDate;
         this.endDate = endDate;
-        this.customers = customers;
-        this.kamarOrdered = kamarOrdered;
+        this.customers = customerRumah;
+        this.rumahOrdered = rumahOrdered;
 
-        this.noTransaksi = Generator.generateTransaksiID(
+        this.noTransaksi = GeneratorRumah.generateTransaksiID(
                 Formatting.formatDate(tanggalTransaksi),
                 String.valueOf(this.getTotal()),
                 customers.get(0).getNama(),
@@ -109,19 +110,19 @@ public class TransaksiRumah {
         this.checkOut = checkOut;
     }
 
-    public AppEnums.StatusTransaksi getStatusTransaksi() {
+    public AppRumahEnums.StatusTransaksi getStatusTransaksi() {
         return statusTransaksi;
     }
 
-    public void setStatusTransaksi(AppEnums.StatusTransaksi statusTransaksi) {
+    public void setStatusTransaksi(AppRumahEnums.StatusTransaksi statusTransaksi) {
         this.statusTransaksi = statusTransaksi;
     }
 
-    public AppEnums.Pembayaran getPembayaran() {
+    public AppRumahEnums.Pembayaran getPembayaran() {
         return pembayaran;
     }
 
-    public void setPembayaran(AppEnums.Pembayaran pembayaran) {
+    public void setPembayaran(AppRumahEnums.Pembayaran pembayaran) {
         this.pembayaran = pembayaran;
     }
 
@@ -133,11 +134,11 @@ public class TransaksiRumah {
         this.pegawai = pegawai;
     }
 
-    public ArrayList<Customer> getCustomers() {
+    public ArrayList<CustomerRumah> getCustomers() {
         return customers;
     }
 
-    public void setCustomers(ArrayList<Customer> customers) {
+    public void setCustomers(ArrayList<CustomerRumah> customers) {
         this.customers = customers;
     }
 
@@ -154,26 +155,26 @@ public class TransaksiRumah {
         long intervalDay = (diff / (1000 * 60 * 60 * 24) % 365); // endDate.compareTo(startDate);
 
         // System.out.println("Interval: " + intervalDay);
-        for (Kamar kamar : this.kamarOrdered) {
-            this.total += kamar.getHarga() * intervalDay;
+        for (Rumah umah : this.rumahOrdered) {
+            this.total += umah.getHarga() * intervalDay;
         }
 
     }
 
-    public void setKamarOrdered(ArrayList<Kamar> kamarOrdered) {
-        this.kamarOrdered = kamarOrdered;
+    public void setKamarOrdered(ArrayList<Rumah> rumahOrdered) {
+        this.rumahOrdered = rumahOrdered;
     }
 
-    public void addKamar(Kamar kamar) {
-        this.kamarOrdered.add(kamar);
+    public void addKamar(Rumah umah) {
+        this.rumahOrdered.add(umah);
     }
 
-    public void removeKamar(Kamar k) {
-        this.kamarOrdered.remove(k);
+    public void removeKamar(Rumah umah) {
+        this.rumahOrdered.remove(umah);
     }
 
-    public ArrayList<Kamar> getKamarOrdered() {
-        return kamarOrdered;
+    public ArrayList<Rumah> getKamarOrdered() {
+        return rumahOrdered;
     }
 
     public double getPaid() {
@@ -184,11 +185,11 @@ public class TransaksiRumah {
         this.paid = paid;
     }
 
-    public AppEnums.StatusTransaksiBayar getStatusPembayaran() {
+    public AppRumahEnums.StatusTransaksiBayar getStatusPembayaran() {
         return statusPembayaran;
     }
 
-    public void setStatusPembayaran(AppEnums.StatusTransaksiBayar statusPembayaran) {
+    public void setStatusPembayaran(AppRumahEnums.StatusTransaksiBayar statusPembayaran) {
         this.statusPembayaran = statusPembayaran;
     }
 

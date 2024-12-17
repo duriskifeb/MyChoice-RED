@@ -15,15 +15,15 @@ public class GeneratorRumah {
             case USER:
                 result = result + "-user";
                 break;
-            case RESERVATION_AGENT:
-                result = result + "-ra";
-                break;
-            case PAYMENT_AGENT:
-                result = result + "-pa";
-                break;
-            case CLEANING_AGENT:
-                result = result + "-ca";
-                break;
+            // case RESERVATION_AGENT:
+            // result = result + "-ra";
+            // break;
+            // case PAYMENT_AGENT:
+            // result = result + "-pa";
+            // break;
+            // case CLEANING_AGENT:
+            // result = result + "-ca";
+            // break;
         }
         return result.toLowerCase();
 

@@ -42,9 +42,6 @@ public class AppRumahEnums {
     public enum userRole {
         ADMIN,
         USER,
-        RESERVATION_AGENT,
-        PAYMENT_AGENT,
-        CLEANING_AGENT,
     }
 
     public enum Pembayaran {
