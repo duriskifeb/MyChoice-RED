@@ -115,8 +115,8 @@ public class HotelManagementApp {
                         this.masterCustomerMenu.showDetailCustomerMenu();
                         break;
                     case SUB_MASTER_DETAIL_REPORTING:
-                            this.masterReportingMenu.showDetailReportingMenu();
-                            break;
+                        this.masterReportingMenu.showDetailReportingMenu();
+                        break;
                     case MASTER_REPORTING:
                         this.masterReportingMenu.showMasterReportingMenu();
                         break;
