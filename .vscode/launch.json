@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SortingWithVisual",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.MateriBapakfidi.SortingWithVisual",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "SortingAlgorithms",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.MateriBapakfidi.SortingAlgorithms",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "AnalisiTES",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.MateriBapakfidi.AnalisiTES",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Home",
+      "request": "launch",
+      "mainClass": "NguliaH.StudyLearning.Home",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "main",
+      "request": "launch",
+      "mainClass": "TubesStrukdatList.main",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "run",
+      "request": "launch",
+      "mainClass": "NguliaH.MultiLinkedListNew.run",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "SistemAkademik",
       "request": "launch",
       "mainClass": "NguliaH.Pertemuan10.SistemAkademik",
