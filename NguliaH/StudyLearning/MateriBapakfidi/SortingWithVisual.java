@@ -47,7 +47,7 @@ public class SortingWithVisual {
     public void generateBar() throws InterruptedException {
         Thread.sleep(5);
         frame.getContentPane().removeAll();
-        frame.add(sortingInfo); // Tambahkan label kembali setelah reset
+        frame.add(sortingInfo);
 
         for (int i = 0; i < array.size(); i++) {
             barHeight = array.get(i);
