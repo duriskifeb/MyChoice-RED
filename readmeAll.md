@@ -1,1 +1,1 @@
-cosnt tempat pertukaran data secara aman
+Menjadi asprak dan menjadi apapaun, jangan lupa belajar sebelum mengajar di hajar!!
