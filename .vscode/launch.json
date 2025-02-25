@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Praktikum4",
+      "request": "launch",
+      "mainClass": "AsprakPBO.Praktikum4",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Praktikum3",
+      "request": "launch",
+      "mainClass": "AsprakPBO.Praktikum3",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Praktikum2",
+      "request": "launch",
+      "mainClass": "AsprakPBO.Praktikum2",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Praktikum1",
+      "request": "launch",
+      "mainClass": "AsprakPBO.Praktikum1",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "HackingProgres",
+      "request": "launch",
+      "mainClass": "NguliaH.Maskud.HackingProgres",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "mainan",
+      "request": "launch",
+      "mainClass": "NguliaH.mainan",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
+      "name": "Game",
+      "request": "launch",
+      "mainClass": "NguliaH.Game",
+      "projectName": "MyChoice-RED_6290c874"
+    },
+    {
+      "type": "java",
       "name": "SortingWithVisual",
       "request": "launch",
       "mainClass": "NguliaH.StudyLearning.MateriBapakfidi.SortingWithVisual",
